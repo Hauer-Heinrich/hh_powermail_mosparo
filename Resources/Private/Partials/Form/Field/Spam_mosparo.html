@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:vh="http://typo3.org/ns/In2code/Powermail/ViewHelpers"
+    xmlns:mosparo="http://typo3.org/ns/HauerHeinrich/HhPowermailMosparo/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+
+<mosparo:getFieldInformations field="{field.uid}" as="mosparoSpamFields" />
+
+<f:asset.css identifier="powermail.mosparo" href="{mosparoSpamFields.mosparo_host}/resources/{mosparoSpamFields.mosparo_uuid}.css" />
+<f:asset.script identifier="powermail.mosparo" src="{mosparoSpamFields.mosparo_host}/build/mosparo-frontend.js" />
+<f:asset.script identifier="powermail.mosparo.config" src="EXT:hh_powermail_mosparo/Resources/Public/JavaScript/mosparo.config.js" />
+
+<f:spaceless><div id="powermail_fieldwrap_{field.uid}" class="powermail_fieldwrap powermail_fieldwrap_input powermail_fieldwrap_{field.uid} {field.css} powermail_fieldwrap_checkboxlink">
+    <f:render partial="Form/FieldLabel" arguments="{_all}" />
+
+    <mosparo:getFieldInformations field="{field.uid}" as="mosparoSpamFields" />
+    <f:if condition="{mosparoSpamFields}">
+        <f:then>
+            <div
+                id="mosparo-box-{field.uid}"
+                class="mosparo-box {settings.styles.framework.fieldWrappingClasses}"
+                data-host="{mosparoSpamFields.mosparo_host}"
+                data-uuid="{mosparoSpamFields.mosparo_uuid}"
+                data-public-key="{mosparoSpamFields.mosparo_publickey}"
+                data-options="{mosparoSpamFields.mosparo_options}"
+            ></div>
+        </f:then>
+    </f:if>
+</div></f:spaceless>
+
+</html>

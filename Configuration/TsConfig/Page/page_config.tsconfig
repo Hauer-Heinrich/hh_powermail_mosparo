@@ -1,0 +1,15 @@
+### powermail - new custom fields
+tx_powermail {
+    flexForm {
+        type {
+            addFieldOptions {
+                spam_mosparo = Mosparo SPAM protection
+                spam_mosparo {
+                    ### (0:string, 1:array, 2:date, 3:file)
+                    dataType = 1
+                    export = 0
+                }
+            }
+        }
+    }
+}

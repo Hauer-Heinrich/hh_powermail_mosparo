@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-02-08T00:01:00Z" product-name="hh_powermail_mosparo">
+        <header/>
+        <body>
+
+            <trans-unit id="data_protection_text.label" xml:space="preserve">
+                <source>data protection text</source>
+            </trans-unit>
+
+            <trans-unit id="mosparo_host.label" xml:space="preserve">
+                <source>Host</source>
+            </trans-unit>
+            <trans-unit id="mosparo_host.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="mosparo_uuid.label" xml:space="preserve">
+                <source>UUID</source>
+            </trans-unit>
+            <trans-unit id="mosparo_uuid.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="mosparo_publickey.label" xml:space="preserve">
+                <source>Public Key</source>
+            </trans-unit>
+            <trans-unit id="mosparo_publickey.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="mosparo_options.label" xml:space="preserve">
+                <source>Options</source>
+            </trans-unit>
+            <trans-unit id="mosparo_options.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

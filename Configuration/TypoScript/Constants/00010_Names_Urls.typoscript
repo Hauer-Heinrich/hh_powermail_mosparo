@@ -1,0 +1,6 @@
+ext {
+    name = hh_powermail_mosparo
+    urls {
+        extResources = typo3conf/ext/hh_powermail_mosparo/Resources/
+    }
+}
