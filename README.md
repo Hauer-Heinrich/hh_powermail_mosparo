@@ -6,7 +6,7 @@ Thanks to [SICOR Dev Team](https://github.com/SicorDev "GitHub profile: SicorDev
 
 ### Installation
 ... like any other TYPO3 extension [extensions.typo3.org](https://extensions.typo3.org/ "TYPO3 Extension Repository")
-Don't forget to include PageTS / look at features section
+Don't forget to include PageTS!
 
 ### Configuration
 Default / fallback configuration is done via TYPO3 constants-editor.
