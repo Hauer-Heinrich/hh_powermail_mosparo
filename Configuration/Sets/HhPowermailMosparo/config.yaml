@@ -1,0 +1,5 @@
+name: hauerheinrich/hh-powermail-mosparo
+label: hh_powermail_mosparo, main set
+
+dependencies:
+  - in2code/powermail-dropin-main
