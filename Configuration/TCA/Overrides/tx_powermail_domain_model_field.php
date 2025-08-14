@@ -40,6 +40,19 @@ call_user_func(function(string $extensionKey) {
                 'eval' => 'trim',
             ]
         ],
+        'mosparo_privatekey' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:'.$extensionKey.'/Resources/Private/Language/locallang.xlf:mosparo_privatekey.label',
+            'description' => 'LLL:EXT:'.$extensionKey.'/Resources/Private/Language/locallang.xlf:mosparo_privatekey.description',
+            'config' => [
+                'description' => '',
+                'type' => 'input',
+                'size' => 30,
+                'max' => 255,
+                'eval' => 'trim',
+            ]
+        ],
+        // TODO: implementation
         'mosparo_options' => [
             'exclude' => true,
             'label' => 'LLL:EXT:'.$extensionKey.'/Resources/Private/Language/locallang.xlf:mosparo_options.label',
@@ -65,7 +78,7 @@ call_user_func(function(string $extensionKey) {
             mosparo_host,
             mosparo_uuid,
             mosparo_publickey,
-            mosparo_options,
+            mosparo_privatekey,
             --div--;LLL:EXT:powermail/Resources/Private/Language/locallang_db.xlf:tx_powermail_domain_model_field.sheet1,
                 mandatory,
                 --palette--;Layout;43,

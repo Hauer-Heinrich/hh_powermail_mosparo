@@ -4,3 +4,17 @@ ext {
         extResources = typo3conf/ext/hh_powermail_mosparo/Resources/
     }
 }
+
+plugin.tx_hhpowermailmosparo {
+    # cat=hhpowermailmosparo//0010; type=text; label= Public Key of your mosparo project
+        publickey =
+
+    # cat=hhpowermailmosparo//0020; type=text; label= Private Key of your mosparo project
+        privatekey =
+
+    # cat=hhpowermailmosparo//0030; type=text; label= Uid of your mosparo project
+        uid =
+
+    # cat=hhpowermailmosparo//0040; type=text; label= Host of your mosparo installation
+        host = https://yourinstance.example.com
+}

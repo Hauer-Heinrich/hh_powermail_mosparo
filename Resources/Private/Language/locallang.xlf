@@ -29,6 +29,13 @@
                 <source></source>
             </trans-unit>
 
+            <trans-unit id="mosparo_privatekey.label" xml:space="preserve">
+                <source>Private Key</source>
+            </trans-unit>
+            <trans-unit id="mosparo_privatekey.description" xml:space="preserve">
+                <source>DO NOT SHARE THIS KEY WITH ANYONE ELSE!</source>
+            </trans-unit>
+
             <trans-unit id="mosparo_options.label" xml:space="preserve">
                 <source>Options</source>
             </trans-unit>

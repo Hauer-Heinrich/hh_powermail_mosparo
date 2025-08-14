@@ -10,4 +10,35 @@ plugin.tx_powermail {
             62 = {$ext.urls.extResources}Private/Layouts/
         }
     }
+
+    settings {
+        setup {
+            spamshield {
+                methods {
+                    ### Add mosparo spamcheck
+                    354 {
+                        _enable = 1
+
+                        ### Spamcheck name
+                        name = Mosparo Captcha
+
+                        ### Class
+                        class = HauerHeinrich\HhPowermailMosparo\Domain\Validator\SpamShield\MosparoMethod
+
+                        ### if this check failes - add this indication value to indicator (0 disables this check completely)
+                        indication = 10
+
+                        ### method configuration
+                        configuration {
+                            privatekey = {$plugin.tx_hhpowermailmosparo.privatekey}
+                            publickey = {$plugin.tx_hhpowermailmosparo.publickey}
+                            host = {$plugin.tx_hhpowermailmosparo.host}
+                            uid = {$plugin.tx_hhpowermailmosparo.uid}
+                            # debug = true
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

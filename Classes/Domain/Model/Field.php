@@ -9,6 +9,7 @@ class Field extends \In2code\Powermail\Domain\Model\Field {
     protected string $mosparo_host = '';
     protected string $mosparo_uuid = '';
     protected string $mosparo_publickey = '';
+    protected string $mosparo_privatekey = '';
     protected string $mosparo_options = '';
 
     public function getMosparoHost(): string {
@@ -33,6 +34,14 @@ class Field extends \In2code\Powermail\Domain\Model\Field {
 
     public function setMosparoPublickey(string $mosparo_publickey): void {
         $this->mosparo_publickey = $mosparo_publickey;
+    }
+
+    public function getMosparoPrivatekey(): string {
+        return $this->mosparo_privatekey;
+    }
+
+    public function setMosparoPrivatekey(string $mosparo_privatekey): void {
+        $this->mosparo_privatekey = $mosparo_privatekey;
     }
 
     public function getMosparoOptions(): string {
