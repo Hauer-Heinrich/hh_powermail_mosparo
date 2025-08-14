@@ -2,6 +2,8 @@
 hh_powermail_mosparo is a TYPO3 extension which extends the EXT:powermail.
 Integrates the mosparo spam protection system into TYPO3 Powermail extension, enabling easy and effective spam protection for Powermail forms.
 
+Thanks to [SICOR Dev Team](https://github.com/SicorDev "GitHub profile: SicorDev")
+
 ### Installation
 ... like any other TYPO3 extension [extensions.typo3.org](https://extensions.typo3.org/ "TYPO3 Extension Repository")
 Don't forget to include PageTS / look at features section
@@ -15,6 +17,7 @@ If you enable the "debug" option, then you will receive more information from va
 
 Do not change "354"! :)
 
+TypoScript:
 ```
 plugin.tx_powermail {
     settings {
